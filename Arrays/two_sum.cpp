@@ -1,7 +1,7 @@
 // Problem: Two Sum (LeetCode #1)
 // Difficulty: Easy
 // Approach: Brute Force O(n^2)
-
+/*
 class Solution {
 public:
     vector<int> twoSum(vector<int>& nums, int target) {
@@ -15,3 +15,4 @@ public:
         return {};
     }
 };
+*/

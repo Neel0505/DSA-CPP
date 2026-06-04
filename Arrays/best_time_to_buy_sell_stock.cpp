@@ -1,7 +1,7 @@
 // Problem: Best Time to Buy and Sell Stock (LeetCode #121)
 // Difficulty: Easy
 // Approach: Single Pass O(n)
-
+/*
 class Solution {
 public:
     int maxProfit(vector<int>& prices) {
@@ -23,3 +23,4 @@ public:
         return maxProfit;
     } 
 };
+*/

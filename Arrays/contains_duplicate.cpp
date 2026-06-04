@@ -1,7 +1,7 @@
 // Problem: Contains Duplicate (LeetCode #217)
 // Difficulty: Easy
 // Approach: Hash Set O(n)
-
+/*
 class Solution {
 public:
     bool containsDuplicate(vector<int>& nums) {
@@ -15,3 +15,4 @@ public:
         return false;
     }
 };
+*/
