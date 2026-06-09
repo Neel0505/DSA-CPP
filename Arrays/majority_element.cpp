@@ -3,6 +3,7 @@
 // Leetcode problem number: 169
 
 /*
+brute force approach: O(n^2) time complexity, O(1) space complexity
 class Solution {
 public:
     int majorityElement(vector<int>& nums) {
@@ -20,6 +21,30 @@ public:
     }
 }
 return -1;
+    }
+
+};
+
+
+optimal approach: O(n) time complexity, O(1) space complexity
+class Solution {
+public:
+    int majorityElement(vector<int>& nums) {
+        int frequency = 0, ans = 0;
+
+    for (int i = 0; i < nums.size(); i++) {
+        if (frequency == 0) {
+            ans = nums[i];
+        }
+
+        if (ans == nums[i]) {
+            frequency++;
+        } else {
+            frequency--;
+        }
+    }
+
+    return ans;
     }
 
 };
