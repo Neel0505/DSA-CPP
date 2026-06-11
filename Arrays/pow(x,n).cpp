@@ -1,8 +1,11 @@
 // Problem: Pow(x^n) (LeetCode #50)
 // Difficulty: Medium
 // Approach: Brute Force O(n) - TLE on large inputs
-// TODO: Implement Binary Exponentiation O(log n)
+// Later optimized using Binary Exponentiation O(log n)
 
+
+
+// Brute Force Approach
 /*
 class Solution {
 public:
@@ -17,6 +20,32 @@ public:
        else 
          return pow;
 
+    }
+    
+};
+*/
+
+// Binary Exponentiation Approach
+// Time Complexity: O(log n)
+
+/*
+class Solution {
+public:
+    double myPow(double x, int n) {
+        long binform = n;
+        if(binform < 0){
+            binform = -binform;
+            x = 1/x;
+        }
+        double pow = 1;
+        while(binform > 0){
+            if(binform %2 == binform){
+                pow*=x;
+            }
+            x *= x;
+            binform /= 2;
+        }   
+        return pow;
     }
     
 };
