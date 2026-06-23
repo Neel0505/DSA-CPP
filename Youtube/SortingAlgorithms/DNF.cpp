@@ -1,8 +1,9 @@
-// Leetcode problem: Sort Colors (LeetCode #75)
+// Leetcode problem: 75
 // Difficulty: Medium
 // Problem link: https://leetcode.com/problems/sort-colors/
-// Pending Approach: Dutch National Flag Algorithm (One Pass) 
-// Pending Youtube video 25 for DNF Algorithm
+// Pending Approach: Dutch National Flag Algorithm (One Pass)
+
+// Tried brute force appraoch prevously now revisiting the problem with youTube video 25 for DNF Algorithm
 
 // Brute Force Approach Ascending Order
 /*
@@ -22,6 +23,43 @@ public:
             }
         }
  }  
+};
+*/
+
+
+
+// More optimized approach over the brute force (Still not the best approach)
+/*
+class Solution {    //Total Time Complexity: O(N) + O(N) = O(2N) = O(N)
+public:
+    void sortColors(vector<int>& nums) {
+        int n = nums.size();
+        int count0 = 0, count1 = 0, count2 = 0;
+
+        //Time Complexity: O(N)
+        for(int i=0;i<n;i++){
+            if(nums[i] == 0){
+                count0++;
+            }
+            else if(nums[i] == 1){
+                count1++;
+            }
+            else{
+                count2++;
+            }
+        }
+        //Time Complexity: O(N)
+        int index = 0;
+        for(int i=0;i<count0;i++){
+            nums[index++] = 0;
+        }
+        for(int i=0;i<count1;i++){
+            nums[index++] = 1;
+        }
+        for(int i=0;i<count2;i++){
+            nums[index++] = 2;
+        }
+    }
 };
 */
 
