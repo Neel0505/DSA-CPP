@@ -23,4 +23,4 @@ int main() {
 // Recurrence relation for this recursive function can be expressed as:
 // T(n) = T(n-1) + O(1), where T(n) is the time taken to compute the sum of first n natural numbers, and O(1) is the time taken for the current function call (addition and making the recursive call).
 
- // tc = total calls * time taken for each call = (n + 1) * O(1) = O(n)
+ // tc = total calls * time taken for each call = (n + 1) * O(1) = O(n) 
