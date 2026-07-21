@@ -2,7 +2,7 @@
 // Divide and Conquer Algorithm
 // Picks an element as pivot and partitions the given array around the picked pivot.
 
-// Time Complexity: O(n log n) on average, O(n^2) in the worst case
+// Time Complexity: O(n log n) 
 // Space Complexity: O(log n) due to recursive stack space
 
 
