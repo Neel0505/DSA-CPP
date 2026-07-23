@@ -1,0 +1,33 @@
+Class is a blueprint of objects (refer ...\DSA-C++\Youtube\OPPs\ClassObject.cpp)
+
+Access Modifiers 
+
+1. Private - data and methods accessible inside class (Default)
+2. Public - data and methods accessible to everyone
+3. protected - data and method inside class and its derived class (Used in inheretence)
+
+If some data is meant to me pvt but we have to access it in main for eg -  salary 
+We use  "Setter" and "Getter"
+
+#The 4 pillars of OPPs are 
+1. Encapsulation
+2. Abstraction
+3. inheretence
+4. Polymorphism
+
+
+#Encapsulation 
+Encapsulation is wrapping up of data and member function in a single unit called class
+
+Helps in Data hiding 
+ 
+#Constructor
+Special method invoked automatically at the time of object creation. Used for initializtion
+
+Rules
+1. Same name as class and has no return type 
+2. Constructor called once(automatically), at object creation
+3. Memory allocation happens when Constructor is called
+
+
+https://drive.google.com/file/d/1-fSUUeI02QdHv5x7SJWVtrMId9BEeYXw/view
