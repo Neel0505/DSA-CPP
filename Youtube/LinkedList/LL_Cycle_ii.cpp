@@ -24,7 +24,7 @@ public:
 
             if (slow == fast) { // Cycle detected
                 slow = head; // Reset slow to head
-
+        
                 while (slow != fast) { // Move both pointers at the same speed
                     slow = slow->next;
                     fast = fast->next;
